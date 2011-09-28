@@ -1,4 +1,4 @@
-This module installes the following into the file /editor/add_news.php:
+This module installs the following into the file /editor/add_news.php:
 
 	/***** 
 	* Added by announcement_subscription: Send mail to announcement subscribers 
@@ -21,5 +21,9 @@ which should be around line 70 of the file. add_news.php needs to be writable fo
 to install properly - if the file is unwritable you will need to change the file permissions
 before installing the mod. There are different ways to do this depending on the web server software,
 please see the web server documentation for details. 
+
+In some case the code change may not be possible, and will require you to edit the add_news.php file manually. Check the file
+to see if the code update occurred after the line above, and if not code into the file yourself.
+
 
 To learn more about file permissions, see http://en.wikipedia.org/wiki/Permissions

@@ -33,7 +33,7 @@ if (!$msg->containsErrors() && file_exists(dirname(__FILE__) . '/module.sql')) {
 /******
  * The following core files are changed: 
  * 
- *  editor/add_news.php:   
+ *  mods/_standard/announcenements/add_news.php   
  *
  */  
 
@@ -55,7 +55,7 @@ $changes = "\n\t/*****
 \t*/ \n ";
 
 
-$filename=('../../editor/add_news.php');
+$filename=('../../_standard/announcements/add_news.php');
 if(!is_writable($filename)){
 $msg->addError('ANOUNCEMENTSUB_INSTALL_UNWRITE');
 }else{

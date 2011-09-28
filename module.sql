@@ -9,7 +9,7 @@ CREATE TABLE `courses_members_subscription` (
   `course_id` MEDIUMINT NOT NULL ,
   `subscribe` MEDIUMINT NULL DEFAULT '0',
   PRIMARY KEY (member_id)
-) TYPE=MyISAM;
+) ENGINE=MyISAM;
 
 
 
@@ -76,21 +76,21 @@ INSERT INTO `language_text` VALUES ('en',
 INSERT INTO `language_text` VALUES ('en',
                                     '_msgs',
                                     'AT_INFOS_ANNOUNCEMENTSUB_ALREADYINSTALLED_ADDNEWS',
-                                    'Module already installed in file /editor/add_news.php ',
+                                    'Module already installed in file mods/_standard/announcements/add_news.php ',
                                      NOW(),
                                     'Module installed warning');                                  
 
 INSERT INTO `language_text` VALUES ('en',
                                     '_msgs',
                                     'AT_FEEDBACK_ANNOUNCEMENTSUB_INSTALL_ADDNEWS',
-                                    'Changes made to file /editor/add_news.php ',
+                                    'Changes made to file mods/_standard/announcements/add_news.php ',
                                      NOW(),
                                     'Module installed feedback');
 
 INSERT INTO `language_text` VALUES ('en',
                                     '_msgs',
                                     'AT_ERROR_ANNOUNCEMENTSUB_INSTALL_ADDNEWS',
-                                    'Could not write to file /editor/add_news.php ',
+                                    'Could not write to file mods/_standard/announcements/add_news.php ',
                                      NOW(),
                                     'Module install error');
 
@@ -104,7 +104,7 @@ INSERT INTO `language_text` VALUES ('en',
 INSERT INTO `language_text` VALUES ('en',
                                     '_msgs',
                                     'AT_ERROR_ANOUNCEMENTSUB_INSTALL_UNWRITE',
-                                    'Cannot write to file /editor/add_news.php. Please make sure appropriate permissions are set for writing to this file.',
+                                    'Cannot write to file mods/_standard/announcements/add_news.php. Please make sure appropriate permissions are set for writing to this file.',
                                      NOW(),
                                     'file unwritable error');                                          
 
